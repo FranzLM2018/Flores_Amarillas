@@ -1,0 +1,225 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos en el cuerpo */
+  justify-content: center; /* Centra horizontalmente los elementos en el cuerpo */
+}
+.flower {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  background-color: #000; /* Fondo negro para toda la página */
+
+  /* Agrega una animación de pulsación */
+  animation: pulsate 2s infinite;
+}
+
+.text-above,
+.text-below {
+    position: absolute;
+    text-align: center;
+    color: #fbd702; /* Color del texto */
+    font-size: 25px; /* Tamaño del texto */
+}
+.text-below1 {
+  position: absolute;
+  text-align: center;
+  color: #fff; /* Color del texto */
+  font-size: 25px; /* Tamaño del texto */
+}
+.text-above {
+    top: -70px; /* Ajusta la posición vertical del texto arriba de la flor */
+}
+
+.text-below {
+    bottom: -100px; /* Ajusta la posición vertical del texto debajo de la flor */
+}
+
+.text-below1 {
+  bottom: -120px; /* Ajusta la posición vertical del texto debajo de la flor */
+}
+@keyframes pulsate {
+  0% {
+      transform: scale(1.5);
+  }
+  50% {
+      transform: scale(1.6);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+}
+  .mid {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    background: radial-gradient(circle, #000, #ff5e00, #000);
+  
+    z-index: 4;
+  
+    background-size: 5px 5px;
+  
+    filter: drop-shadow(0 0 8px #682600);
+  }
+  
+  .Petal1 {
+    position: absolute;
+    left: 40px;
+    z-index: 3;
+  
+    width: 120px;
+    height: 30px;
+    border-radius: 50%;
+  
+    background: radial-gradient(circle, #ff5e00, #ffbb00);
+  
+    filter: drop-shadow(0 0 5px #e05200);
+  }
+  
+  .Petal1.p1 {
+    transform: rotate(22.5deg);
+  }
+  .Petal1.p2 {
+    transform: rotate(67.5deg);
+  }
+  .Petal1.p3 {
+    transform: rotate(110.5deg);
+  }
+  .Petal1.p4 {
+    transform: rotate(157.5deg);
+  }
+  
+  .Petal2 {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  
+    width: 200px;
+    height: 40px;
+    border-radius: 50%;
+  
+    background: radial-gradient(circle, #ff5e00, #fbd702);
+  
+    filter: drop-shadow(0 0 5px #e05200);
+  }
+  
+  .Petal2.p1 {
+  }
+  
+  .Petal2.p2 {
+    transform: rotate(90deg);
+  }
+  .Petal2.p3 {
+    transform: rotate(45deg);
+  }
+  
+  .Petal2.p4 {
+    transform: rotate(135deg);
+  }
+  
+  .Petal3 {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+  
+    width: 200px;
+    height: 40px;
+    border-radius: 50%;
+  
+    background: radial-gradient(circle, #ff5e00, #fbd702);
+  
+    filter: drop-shadow(0 0 2px #fbd702);
+  }
+  
+  .Petal3.p1 {
+    transform: rotate(22.5deg);
+  }
+  .Petal3.p2 {
+    transform: rotate(67.5deg);
+  }
+  .Petal3.p3 {
+    transform: rotate(110.5deg);
+  }
+  .Petal3.p4 {
+    transform: rotate(157.5deg);
+  }
+
+  /* rotacion de petalos */
+
+  
+  @keyframes rotatePetalLeft {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .Petal2.p1 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 1s; /* Cambia el retraso a 1.5 segundos para el primer pétalo de Petal2 */
+  }
+  
+  .Petal2.p2 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 2s; /* Agrega un retraso de 3 segundos para el segundo pétalo de Petal2 */
+  }
+  
+  .Petal2.p3 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 3s; /* Agrega un retraso de 4.5 segundos para el tercer pétalo de Petal2 */
+  }
+  
+  .Petal2.p4 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 4s; /* Agrega un retraso de 6 segundos para el cuarto pétalo de Petal2 */
+  }
+  .Petal2.p5 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 4s; /* Agrega un retraso de 6 segundos para el cuarto pétalo de Petal2 */
+  }
+  
+  .Petal2.p6 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 4s; /* Agrega un retraso de 6 segundos para el cuarto pétalo de Petal2 */
+  }
+  
+  
+  .Petal3.p1 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 5s; /* Agrega un retraso de 7.5 segundos para el primer pétalo de Petal3 */
+  }
+  
+  .Petal3.p2 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 6.5s; /* Agrega un retraso de 9 segundos para el segundo pétalo de Petal3 */
+  }
+  
+  .Petal3.p3 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 7.5s; /* Agrega un retraso de 10.5 segundos para el tercer pétalo de Petal3 */
+  }
+  
+  .Petal3.p4 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 8.5s; /* Agrega un retraso de 12 segundos para el cuarto pétalo de Petal3 */
+  }
+  .Petal3.p5 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 9.5s; /* Agrega un retraso de 12 segundos para el cuarto pétalo de Petal3 */
+  }
+  .Petal3.p6 {
+    animation: rotatePetalLeft 10s infinite linear; /* Ajusta la duración de la animación según tus preferencias */
+    animation-delay: 10.5s; /* Agrega un retraso de 12 segundos para el cuarto pétalo de Petal3 */
+  }
